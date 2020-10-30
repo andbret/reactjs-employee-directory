@@ -3,7 +3,6 @@ import './App.css';
 import axios from "axios";
 import Header from './components/Header';
 import Main from './components/Main';
-// import API from './components/utils/API.js';
 
 
 class App extends React.Component {
@@ -11,6 +10,8 @@ class App extends React.Component {
   state = {
     employees: [],
   };
+
+
 
   componentDidMount() {
       axios.get(`https://randomuser.me/api/?results=50&nat=us`)
@@ -24,12 +25,15 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-       
+<br/>
+<br/>
         {this.state.employees.length &&
         <Main employees={this.state.employees}/>
       
   }
 
+                    {/* <SortedCards empList={this.state.filteredEmployees} /> */}
+                  
       </div>
     );
   }

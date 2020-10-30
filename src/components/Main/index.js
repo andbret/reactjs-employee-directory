@@ -33,11 +33,12 @@ class Main extends React.Component {
 
     render() {
         return (
-            <div>
-                {/* {this.fillList} */}
+            <div className="container">
+                <div className="row">
+                <div className="col-sm-4">
                 <form className="form">
                 <input type="text" 
-                className="form-control form-control-lg" 
+                className="form-control form-control-lg shadow" 
                 value={this.state.currentSearch} 
                 name="currentSearch" 
                 onChange={event => this.handleInputChange(event)} 
@@ -45,7 +46,10 @@ class Main extends React.Component {
 
               
                 </form>
-               
+                </div>
+                </div>
+                <br/>
+                <br/>
                     <SortedCards empList={this.state.filteredEmployees} />
                 
             </div>

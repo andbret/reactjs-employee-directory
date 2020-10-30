@@ -1,9 +1,6 @@
 .App {
-  text-align: center;
-  justify-content: center;
   display:block;
+  background-color: rgb(233, 226, 238);
+  min-height: 100vh;
 }
 
-.form {
-  padding: 5px;
-}
